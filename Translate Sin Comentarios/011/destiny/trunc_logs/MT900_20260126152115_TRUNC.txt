@@ -1,0 +1,20 @@
+Timestamp : 2026-01-26T20:21:15+00:00
+SourceXML : C:\Users\heoctor\Desktop\WANT\BANREP\Translete-Update\Translate Sin Comentarios\011\entry\entrada.xml
+Message Type : MT900
+Exception Report:
+
+Envelope
+CAMT.05a to MT900 Translation Warnings:
+ - NetworkValidation: WARNING.TINPUT: The input message contains potential truncation errors.
+ - Translation:      WARNING.TOUTUG: Validation of usage guidelines performed locally.
+
+[0] Field 72
+    Reason : content truncated (max 35, exceeded by 35 chars)
+    message   : Translation: TRUNC_N.T0000T: Field content has been truncated.
+    Path   : Document/BkToCstmrDbtCdtNtfctn/Ntfctn/Ntry/NtryDtls/TxDtls/AddtlTxInf
+    Original Value:
+        '/BNF/REF/51010056DIR TESORO NACIONAL,OTCDERIV,YOURREF SWAP, TD20060727'
+    Truncated Value:
+        '/BNF/REF/51010056DIR TESORO NACIONA'
+        'L,OTCDERIV,YOURREF SWAP, TD20060727'
+---

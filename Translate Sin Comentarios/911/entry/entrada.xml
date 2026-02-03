@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Saa:DataPDU xmlns:SwSec="urn:swift:snl:ns.SwSec" xmlns:SwGbl="urn:swift:snl:ns.SwGbl" xmlns:SwInt="urn:swift:snl:ns.SwInt" xmlns:Sw="urn:swift:snl:ns.Sw" xmlns:Saa="urn:swift:saa:xsd:saa.2.0">
+    <Saa:Revision>2.0.14</Saa:Revision>
+    <Saa:Header>
+            <Saa:SenderReference>IBREPCOBBXXX054$251008163885</Saa:SenderReference>
+            <Saa:NetworkDeliveryStatus>NetworkAcked</Saa:NetworkDeliveryStatus>
+            <Saa:OriginalInstanceAddressee>
+                <Saa:X1>BREPCOBBXXX</Saa:X1>
+                <Saa:X2>xxx</Saa:X2>
+                <Saa:FinancialInstitution>BANCO DE LA REPUBLICA</Saa:FinancialInstitution>
+                <Saa:CityName>BOGOTA</Saa:CityName>
+                <Saa:CountryCode>CO</Saa:CountryCode>
+            </Saa:OriginalInstanceAddressee>
+            <Saa:ReportingApplication>SWIFTNetInterface</Saa:ReportingApplication>
+            <Saa:NetworkInfo>
+                <Saa:Priority>Normal</Saa:Priority>
+                <Saa:IsPossibleDuplicate>true</Saa:IsPossibleDuplicate>
+                <Saa:Service>swift.finplus!pf</Saa:Service>
+                <Saa:Network>SWIFTNet</Saa:Network>
+                <Saa:SessionNr>000000</Saa:SessionNr>
+                <Saa:SeqNr>000000000</Saa:SeqNr>
+                <Saa:SWIFTNetNetworkInfo>
+                    <Saa:RequestType>camt.054.001.08</Saa:RequestType>
+                    <Saa:RequestSubtype>swift.cbprplus.03</Saa:RequestSubtype>
+                    <Saa:Reference>73dd3c7e-a44e-41f0-8d97-436184bcc015</Saa:Reference>
+                </Saa:SWIFTNetNetworkInfo>
+            </Saa:NetworkInfo>
+            <Saa:Interventions>
+                <Saa:Intervention>
+                    <Saa:IntvCategory>TransmissionReport</Saa:IntvCategory>
+                    <Saa:CreationTime>20251210140128</Saa:CreationTime>
+                    <Saa:OperatorOrigin>SYSTEM</Saa:OperatorOrigin>
+                    <Saa:Contents>
+                        <AckNack>
+                            <PseudoAckNack>{1:F21BREPCOBBAXXX000000000000000}{4:{177:2512101401}{451:1}{405:T08}{311:NAK Message expired}}</PseudoAckNack>
+                        </AckNack>
+                    </Saa:Contents>
+                </Saa:Intervention>
+            </Saa:Interventions>
+            <Saa:IsRelatedInstanceOriginal>true</Saa:IsRelatedInstanceOriginal>
+            <Saa:MessageCreator>Messenger</Saa:MessageCreator>
+            <Saa:IsMessageModified>false</Saa:IsMessageModified>
+            <Saa:MessageFields>HeaderAndBody</Saa:MessageFields>
+            <Saa:Message>
+                <Saa:SenderReference>IBREPCOBBXXX054$251008163886</Saa:SenderReference>
+                <Saa:MessageIdentifier>camt.054.001.08</Saa:MessageIdentifier>
+                <Saa:Format>MX</Saa:Format>
+                <Saa:SubFormat>Input</Saa:SubFormat>
+                <Saa:Sender>
+                    <Saa:DN>ou=xxx,o=brepcobb,o=swift</Saa:DN>
+                    <Saa:FullName>
+                        <Saa:X1>BREPCOBBXXX</Saa:X1>
+                        <Saa:X2>xxx</Saa:X2>
+                    </Saa:FullName>
+                </Saa:Sender>
+                <Saa:Receiver>
+                    <Saa:DN>ou=xxx,o=brepcobb,o=swift</Saa:DN>
+                    <Saa:FullName>
+                        <Saa:X1>BREPCOBBXXX</Saa:X1>
+                        <Saa:X2>xxx</Saa:X2>
+                        <Saa:FinancialInstitution>BANCO DE LA REPUBLICA</Saa:FinancialInstitution>
+                        <Saa:CountryCode>CO</Saa:CountryCode>
+                    </Saa:FullName>
+                </Saa:Receiver>
+                <Saa:InterfaceInfo>
+                    <Saa:MessageCreator>Messenger</Saa:MessageCreator>
+                    <Saa:MessageContext>Report</Saa:MessageContext>
+                    <Saa:MessageNature>Financial</Saa:MessageNature>
+                    <Saa:Sumid>171991AEFFFD7FD1</Saa:Sumid>
+                </Saa:InterfaceInfo>
+                <Saa:NetworkInfo>
+                    <Saa:Priority>Normal</Saa:Priority>
+                    <Saa:IsPossibleDuplicate>true</Saa:IsPossibleDuplicate>
+                    <Saa:Service>swift.finplus!pf</Saa:Service>
+                    <Saa:Network>SWIFTNet</Saa:Network>
+                    <Saa:SessionNr>000000</Saa:SessionNr>
+                    <Saa:SeqNr>000000000</Saa:SeqNr>
+                    <Saa:SWIFTNetNetworkInfo>
+                        <Saa:RequestType>camt.054.001.08</Saa:RequestType>
+                        <Saa:RequestSubtype>swift.cbprplus.03</Saa:RequestSubtype>
+                        <Saa:Reference>73dd3c7e-a44e-41f0-8d97-436184bcc015</Saa:Reference>
+                    </Saa:SWIFTNetNetworkInfo>
+                </Saa:NetworkInfo>
+                <Saa:ExpiryDateTime>20251028135530</Saa:ExpiryDateTime>
+            </Saa:Message>
+    </Saa:Header>
+    <Saa:Body>
+        <head:AppHdr xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+            <head:Fr>
+                <head:FIId>
+                    <head:FinInstnId>
+                        <head:BICFI>BREPCOBBXXX</head:BICFI>
+                    </head:FinInstnId>
+                </head:FIId>
+            </head:Fr>
+            <head:To>
+                <head:FIId>
+                    <head:FinInstnId>
+                        <head:BICFI>BREPCOBBXXX</head:BICFI>
+                    </head:FinInstnId>
+                </head:FIId>
+            </head:To>
+            <head:BizMsgIdr>CITI190403505Z3</head:BizMsgIdr>
+            <head:MsgDefIdr>camt.054.001.08</head:MsgDefIdr>
+            <head:BizSvc>swift.cbprplus.02</head:BizSvc>
+            <head:CreDt>9999-12-31T00:00:00+00:00</head:CreDt>
+        </head:AppHdr>
+        <camt:Document xmlns:camt="urn:iso:std:iso:20022:tech:xsd:camt.054.001.08">
+            <camt:BkToCstmrDbtCdtNtfctn>
+                <camt:GrpHdr>
+                    <camt:MsgId>CITI190403505Z4</camt:MsgId>
+                    <camt:CreDtTm>9999-12-31T00:00:00+00:00</camt:CreDtTm>
+                </camt:GrpHdr>
+                <camt:Ntfctn>
+                    <camt:Id>CITI190403505Z3</camt:Id>
+                    <camt:Acct>
+                        <camt:Id>
+                            <camt:Othr>
+                                <camt:Id>36387251</camt:Id>
+                            </camt:Othr>
+                        </camt:Id>
+                        <camt:Ccy>USD</camt:Ccy>
+                    </camt:Acct>
+                    <camt:Ntry>
+                        <camt:NtryRef>NOTPROVIDED</camt:NtryRef>
+                        <camt:Amt Ccy="USD">1234.01</camt:Amt>
+                        <camt:CdtDbtInd>CRDT</camt:CdtDbtInd>
+                        <camt:Sts>
+                            <camt:Cd>BOOK</camt:Cd>
+                        </camt:Sts>
+                        <camt:BookgDt>
+                            <camt:DtTm>2025-10-08T11:30:00-05:00</camt:DtTm>
+                        </camt:BookgDt>
+                        <camt:ValDt>
+                            <camt:Dt>2025-10-08</camt:Dt>
+                        </camt:ValDt>
+                        <camt:BkTxCd>
+                            <camt:Prtry>
+                                <camt:Cd>NOTPROVIDED</camt:Cd>
+                                <camt:Issr>NOTPROVIDED</camt:Issr>
+                            </camt:Prtry>
+                        </camt:BkTxCd>
+                        <camt:NtryDtls>
+                            <camt:TxDtls>
+                                <camt:Refs>
+                                    <camt:InstrId>CITI190326505A1</camt:InstrId>
+                                    <camt:EndToEndId>CITI190326505A1</camt:EndToEndId>
+                                </camt:Refs>
+                                <camt:Amt Ccy="USD">1234.56</camt:Amt>
+                                <camt:CdtDbtInd>DBIT</camt:CdtDbtInd>
+                                <camt:RltdPties>
+                                    <camt:Dbtr>
+                                        <camt:Agt>
+                                            <camt:FinInstnId>
+                                                <camt:Nm>FLARCOBB</camt:Nm>
+                                                <camt:PstlAdr>
+                                                    <camt:AdrLine>CITIGROUP FINANCIAL PRODUCTS INC</camt:AdrLine>
+                                                    <camt:AdrLine>38 GREENWICH STREET NEW YORK NY US</camt:AdrLine>
+                                                </camt:PstlAdr>
+                                            </camt:FinInstnId>
+                                        </camt:Agt>
+                                    </camt:Dbtr>
+                                </camt:RltdPties>
+                                <camt:RltdAgts>
+                                    <camt:IntrmyAgt1>
+                                        <camt:FinInstnId>
+                                            <camt:Nm>FONDO LATINOAMERICANO DE RESERVA</camt:Nm>
+                                            <camt:PstlAdr>
+                                                <camt:AdrLine>NEW YORK, NY 10013</camt:AdrLine>
+                                                <camt:AdrLine>NEW YORK, NY</camt:AdrLine>
+                                                <camt:AdrLine>UNITED STATES OF AMERICA</camt:AdrLine>
+                                            </camt:PstlAdr>
+                                        </camt:FinInstnId>
+                                    </camt:IntrmyAgt1>
+                                </camt:RltdAgts>
+                                <camt:RltdDts>
+                                    <camt:IntrBkSttlmDt>2025-10-08</camt:IntrBkSttlmDt>
+                                </camt:RltdDts>
+                                <camt:AddtlTxInf>/BNF/REF/51010056DIR TESORO NACIONAL,OTCDERIV,YOURREF SWAP, TD20060727, MD20170915</camt:AddtlTxInf>
+                            </camt:TxDtls>
+                        </camt:NtryDtls>
+                    </camt:Ntry>
+                </camt:Ntfctn>
+            </camt:BkToCstmrDbtCdtNtfctn>
+        </camt:Document>
+    </Saa:Body>
+</Saa:DataPDU>

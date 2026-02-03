@@ -1,0 +1,39 @@
+Timestamp : 2026-01-16T14:11:23
+SourceXML : C:\Users\heoctor\Desktop\WANT\BANREP\Translete-Update\Translate Sin Comentarios\001\entry\008-16.xml
+Message Type  : MT103
+Exception Report:
+
+Envelope
+PACS.008 to MT103 Translation Warnings:
+ - NetworkValidation: WARNING.TINPUT: The input message contains potential truncation errors.
+ - Translation:      WARNING.TOUTUG: Validation of usage guidelines performed locally. 
+
+[0] Field 50K
+    Reason : content truncated (max 35, exceeded by 46 chars)
+    message   : Translation: TRUNC_N.T0000T: Field content has been truncated.
+    Path   : Envelope/Document/FIToFICstmrCdtTrf/CdtTrfTxInf/UltmtDbtr/Nm
+    Original Value:
+        'INTER-AMERICAN DEVELOPMENT BANK EXTENDED TEXT FOR TRUNCATION TESTTESTT'
+        'ESTTESTTEST'
+---
+
+[1] Field 50K
+    Reason : content truncated (max 35, exceeded by 28 chars)
+    message   : Translation: TRUNC_N.T0000T: Field content has been truncated.
+    Path   : Envelope/Document/FIToFICstmrCdtTrf/CdtTrfTxInf/Dbtr/PstlAdr/AdrLine
+    Original Value: 'CASH MANAGEMENT SECTION - IDB EXTENDED TEXT FOR TRUNCATION TEST'
+---
+
+[2] Field 50K
+    Reason : content truncated (max 35, exceeded by 22 chars)
+    message   : Translation: TRUNC_N.T0000T: Field content has been truncated.
+    Path   : Envelope/Document/FIToFICstmrCdtTrf/CdtTrfTxInf/Dbtr/PstlAdr/AdrLine
+    Original Value: '1300 New York Ave, N.W. EXTENDED TEXT FOR TRUNCATION TEST'
+---
+
+[3] Field 50K
+    Reason : content truncated (max 35, exceeded by 19 chars)
+    message   : Translation: TRUNC_N.T0000T: Field content has been truncated.
+    Path   : Envelope/Document/FIToFICstmrCdtTrf/CdtTrfTxInf/Dbtr/PstlAdr/AdrLine
+    Original Value: 'Washington, DC 20577 EXTENDED TEXT FOR TRUNCATION TEST'
+---

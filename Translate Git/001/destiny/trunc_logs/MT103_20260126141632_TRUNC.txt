@@ -1,0 +1,29 @@
+Timestamp : 2026-01-26T19:16:32+00:00
+SourceXML : C:\Users\heoctor\Desktop\WANT\BANREP\Translete-Update\Translate Git\001\entry\MSG001_input.xml
+Message Type : MT103
+Exception Report:
+
+Envelope
+PACS.008 to MT103 Translation Warnings:
+ - NetworkValidation: WARNING.TINPUT: The input message contains potential truncation errors.
+ - Translation:      WARNING.TOUTUG: Validation of usage guidelines performed locally.
+
+[0] Field 32A
+    Reason : content truncated (max 2, exceeded by 8 chars)
+    message   : Translation: TRUNC_N.T0000T: Field content has been truncated.
+    Path   : Document/FIToFICstmrCdtTrf/CdtTrfTxInf/IntrBkSttlmDt
+    Original Value:
+        '2024-01-22'
+    Truncated Value:
+        '24'
+---
+
+[1] Field 32A
+    Reason : content truncated (max 2, exceeded by 8 chars)
+    message   : Translation: TRUNC_N.T0000T: Field content has been truncated.
+    Path   : Document/FIToFICstmrCdtTrf/CdtTrfTxInf/IntrBkSttlmDt
+    Original Value:
+        '2024-01-22'
+    Truncated Value:
+        '01'
+---

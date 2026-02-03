@@ -1,0 +1,503 @@
+".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.CdtrAgt.FinInstnId.PstlAdr.AdrLine": {
+    "mode": "set",
+    "rules": [
+      {
+        "when": {
+          "all": [
+            { "op": "!=", "left": { "mt": "57B" }, "right": "" },
+            { "op": "=", "left": { "trim": { "value": { "fn": "regex_extract", "args": { "text": { "mt": "57B" }, "pattern": "^(?:[^\\r\\n]*\\r?\\n){2}([^\\r\\n]*)", "group": 1 } } } }, "right": "" },
+            { "op": "=", "left": { "trim": { "value": { "fn": "regex_extract", "args": { "text": { "mt": "57B" }, "pattern": "^(?:[^\\r\\n]*\\r?\\n){3}([^\\r\\n]*)", "group": 1 } } } }, "right": "" },
+            { "op": "=", "left": { "trim": { "value": { "fn": "regex_extract", "args": { "text": { "mt": "57B" }, "pattern": "^(?:[^\\r\\n]*\\r?\\n){4}([^\\r\\n]*)", "group": 1 } } } }, "right": "" }
+          ],
+          "any": [
+            { "op": "=", "left": { "var": "has_CdtrAgtStrtNm" }, "right": "" },
+            { "op": "=", "left": { "var": "has_CdtrAgtTwnNm" }, "right": "" }
+          ]
+        },
+        "then": { "value": "NOTPROVIDED" }
+      },
+      {
+        "when": {
+          "all": [
+            { "op": "!=", "left": { "mt": "57B" }, "right": "" },
+            { "op": "!=", "left": { "trim": { "value": { "fn": "regex_extract", "args": { "text": { "mt": "57B" }, "pattern": "^(?:[^\\r\\n]*\\r?\\n){2}([^\\r\\n]*)", "group": 1 } } } }, "right": "" }
+          ],
+          "any": [
+            { "op": "=", "left": { "var": "has_CdtrAgtStrtNm" }, "right": "" },
+            { "op": "=", "left": { "var": "has_CdtrAgtTwnNm" }, "right": "" }
+          ]
+        },
+        "then": {
+          "value": {
+            "trim": {
+              "value": {
+                "fn": "regex_extract",
+                "args": {
+                  "text": { "mt": "57B" },
+                  "pattern": "^(?:[^\\r\\n]*\\r?\\n){2}([^\\r\\n]*)",
+                  "group": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "when": {
+          "all": [
+            { "op": "!=", "left": { "mt": "57B" }, "right": "" },
+            { "op": "!=", "left": { "trim": { "value": { "fn": "regex_extract", "args": { "text": { "mt": "57B" }, "pattern": "^(?:[^\\r\\n]*\\r?\\n){3}([^\\r\\n]*)", "group": 1 } } } }, "right": "" }
+          ],
+          "any": [
+            { "op": "=", "left": { "var": "has_CdtrAgtStrtNm" }, "right": "" },
+            { "op": "=", "left": { "var": "has_CdtrAgtTwnNm" }, "right": "" }
+          ]
+        },
+        "then": {
+          "value": {
+            "trim": {
+              "value": {
+                "fn": "regex_extract",
+                "args": {
+                  "text": { "mt": "57B" },
+                  "pattern": "^(?:[^\\r\\n]*\\r?\\n){3}([^\\r\\n]*)",
+                  "group": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "when": {
+          "all": [
+            { "op": "!=", "left": { "mt": "57B" }, "right": "" },
+            { "op": "!=", "left": { "trim": { "value": { "fn": "regex_extract", "args": { "text": { "mt": "57B" }, "pattern": "^(?:[^\\r\\n]*\\r?\\n){4}([^\\r\\n]*)", "group": 1 } } } }, "right": "" }
+          ],
+          "any": [
+            { "op": "=", "left": { "var": "has_CdtrAgtStrtNm" }, "right": "" },
+            { "op": "=", "left": { "var": "has_CdtrAgtTwnNm" }, "right": "" }
+          ]
+        },
+        "then": {
+          "value": {
+            "trim": {
+              "value": {
+                "fn": "regex_extract",
+                "args": {
+                  "text": { "mt": "57B" },
+                  "pattern": "^(?:[^\\r\\n]*\\r?\\n){4}([^\\r\\n]*)",
+                  "group": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "when": {
+          "all": [
+            { "op": "=", "left": { "mt": "57B" }, "right": "" },
+            { "op": "!=", "left": { "mt": "57D" }, "right": "" },
+            { "op": "=", "left": { "var": "has_CdtrAgtStrtNm" }, "right": "" },
+            { "op": "=", "left": { "var": "has_CdtrAgtTwnNm" }, "right": "" },
+            {
+              "op": "!=",
+              "left": {
+                "trim": {
+                  "value": {
+                    "fn": "regex_extract",
+                    "args": {
+                      "text": { "mt": "57D" },
+                      "pattern": "^(?:[^\\r\\n]*(?:\\r\\n|\\r|\\n)){3}([^\\r\\n]*)",
+                      "group": 1
+                    }
+                  }
+                }
+              },
+              "right": ""
+            },
+            {
+              "op": "!=",
+              "left": {
+                "fn": "lower",
+                "args": {
+                  "text": {
+                    "trim": {
+                      "value": {
+                        "fn": "regex_extract",
+                        "args": {
+                          "text": { "mt": "57D" },
+                          "pattern": "^(?:[^\\r\\n]*(?:\\r\\n|\\r|\\n)){3}([^\\r\\n]*)",
+                          "group": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "right": "us"
+            }
+          ]
+        },
+        "then": {
+          "value": {
+            "trim": {
+              "value": {
+                "fn": "regex_extract",
+                "args": {
+                  "text": { "mt": "57D" },
+                  "pattern": "^(?:[^\\r\\n]*(?:\\r\\n|\\r|\\n)){3}([^\\r\\n]*)",
+                  "group": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+
+
+  ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.Cdtr.Nm": {
+@@ -7578,7 +7629,7 @@ def sort_key(p):
+
+
+".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.Dbtr.PstlAdr.TwnNm": {
+  "mode": "set",
+  "rules": [
+    {
+      "set": [
+@@ -7606,9 +7657,7 @@ def sort_key(p):
+            }
+          }
+        }
+      ],
+      "when": {
+        "all": [
+          { "op": "in",
+@@ -7750,7 +7799,8 @@ def sort_key(p):
+    }
+  ]
+},
+
+
+  ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.Cdtr.PstlAdr.Ctry": {
+  "mode": "set",
+  "rules": [
+@@ -8005,6 +8055,62 @@ def sort_key(p):
+  ]
+},
+
+".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.Cdtr.PstlAdr.Adrline": {
+  "mode": "set",
+  "rules": [
+      {
+        "set": [
+          {
+            "set_var": {
+              "name": "pacs.008::Cdtr.PstlAdr.Adrline",
+              "scope": "global",
+              "value": {
+                "from_db_query": {
+                  "alias": "pacs.008::Cdtr.PstlAdr.Adrline",
+                  "lookup_message_type": "pacs.008",
+                  "which_uetr_to_lookup": { "mtField": "121" },
+                  "where_to_lookup_uetr": {
+                    "message_type": "pacs.008",
+                    "path_kind": "xml",
+                    "field_path": ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.PmtId.UETR"
+                  },
+                  "field_to_extract": {
+                    "message_type": "pacs.008",
+                    "path_kind": "xml",
+                    "field_path": ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.Cdtr.PstlAdr.Adrline"
+                  },
+                  "fallback_literal": ""
+                }
+              }
+            }
+
+          },
+          {
+            "set_var": {
+              "name": "has_CdtrPstlAdrAdrline",
+              "scope": "global",
+              "value": { "literal": "1" }
+            }
+          }
+        ],
+        "when": {
+          "all": [
+            {
+              "op": "in",
+              "left": { "substr": { "value": { "mt": "20" }, "start": 0, "len": 3 } },
+              "right": ["662", "663", "651"]
+            },
+            { "op": "!=", "left": { "var": "pacs.008::Cdtr.PstlAdr.Adrline" }, "right": "" },
+            { "op": "!=", "left": { "mt": "59" }, "right": "" }
+          ]
+        },
+        "then": {
+          "value": { "var": "pacs.008::Cdtr.PstlAdr.Adrline" }
+        }
+      }
+  ]
+},
+
+    ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.Cdtr.Id.OrgId.AnyBIC": {
+    "mode": "set",
+    "rules": [
+@@ -8076,7 +8182,7 @@ def sort_key(p):
+          {
+            "op": "!=",
+            "left": { "var": "pacs.008::PmtId.EndToEndId" },
+            "right": "NOTPROVIDED"
+          },
+          {
+            "op": "!=",
+@@ -8097,6 +8203,59 @@ def sort_key(p):
+      "then": { "value": { "var": "pacs.008::PmtId.EndToEndId" } }
+    },
+
+    {
+      "set": [
+        {
+          "set_var": {
+            "name": "pacs.008::PmtId.EndToEndId",
+            "scope": "global",
+            "value": {
+              "from_db_query": {
+                "alias": "pacs.008::PmtId.EndToEndId",
+                "lookup_message_type": "pacs.008",
+                "which_uetr_to_lookup": { "mtField": "121" },
+                "where_to_lookup_uetr": {
+                  "message_type": "pacs.008",
+                  "path_kind": "xml",
+                  "field_path": ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.PmtId.UETR"
+                },
+                "field_to_extract": {
+                  "message_type": "pacs.008",
+                  "path_kind": "xml",
+                  "field_path": ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.PmtId.EndToEndId"
+                },
+                "fallback_literal": ""
+              }
+            }
+          }
+        }
+      ],
+      "when": {
+        "all": [
+          {
+            "op": "=",
+            "left": { "var": "pacs.008::PmtId.EndToEndId" },
+            "right": "NOTPROVIDED"
+          },
+          {
+            "op": "!=",
+            "left": {
+              "fn": "regex_extract",
+              "args": {
+                "text": {
+                  "substr": { "value": { "mt": "20" }, "start": 0, "len": 3 }
+                },
+                "pattern": "^(6[0-9]{2})$",
+                "group": 0
+              }
+            },
+            "right": ""
+          }
+        ]
+      },
+      "then": { "value": { "mt": "20" } }
+    },
+
+    {
+      "when": {
+        "all": [
+@@ -8127,7 +8286,6 @@ def sort_key(p):
+  ]
+},
+
+    ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.RmtInf.Ustrd": {
+    "mode": "set",
+    "rules": [
+@@ -8958,7 +9116,7 @@ def sort_key(p):
+              "fn": "regex_extract",
+              "args": {
+                "text": { "mt": "57D" },
+                "pattern": "^(?:[^\\r\\n]*\\r?\\n){2}([^\\r\\n]*)",
+                "group": 1,
+                "flags": 8
+              }
+@@ -8974,7 +9132,7 @@ def sort_key(p):
+              "fn": "regex_extract",
+              "args": {
+                "text": { "mt": "57D" },
+                "pattern": "^(?:[^\\r\\n]*\\r?\\n){2}([^\\r\\n]*)",
+                "group": 1,
+                "flags": 8
+              }
+@@ -8992,20 +9150,60 @@ def sort_key(p):
+      {
+        "when": {
+          "all": [
+            {
+              "op": "in",
+              "left": { "substr": { "value": { "mt": "20" }, "start": 0, "len": 3 } },
+              "right": [
+                "500","506","510","513","520","523","526","527",
+                "540","543","544","545","546","547",
+                "501","502","511","512","521","522","524","525","541"
+              ]
+            },
+            { "op": "!=", "left": { "mt": "57D" }, "right": "" },
+            {
+              "op": "!=",
+              "left": {
+                "fn": "regex_extract",
+                "args": {
+                  "text": { "mt": "57D" },
+                  "pattern": "^(?:[^\\r\\n]*\\r?\\n){0}([^\\r\\n]*)",
+                  "group": 1,
+                  "flags": 8
+                }
+              },
+              "right": ""
+            }
+          ]
+        },
+        "then": {
+          "value": {
+            "trim": {
+              "value": {
+                "fn": "regex_extract",
+                "args": {
+                  "text": { "mt": "57D" },
+                  "pattern": "^(?:[^\\r\\n]*\\r?\\n){0}([^\\r\\n]*)",
+                  "group": 1,
+                  "flags": 8
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "when": { "all": [ { "op": "!=", "left": { "mt": "57D" }, "right": "" } ] },
+        "then": {
+          "value": {
+            "trim": {
+              "value": {
+                "fn": "regex_extract",
+                "args": {
+                  "text": { "mt": "57D" },
+                  "pattern": "^([^\\r\\n]*)",
+                  "group": 1
+                }
+              }
+            }
+          }
+        }
+@@ -9014,7 +9212,7 @@ def sort_key(p):
+  },
+
+
+ ".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.CdtrAgt.FinInstnId.PstlAdr.Ctry": {
+    "mode": "set",
+    "rules": [
+      {
+@@ -9039,14 +9237,13 @@ def sort_key(p):
+              "right": [
+                "500","506","510","513","520","523","526","527",
+                "540","543","544","545","546","547",
+                "501","502","511","512","521","522","524","525","541","545"
+              ]
+            },
+            { "op": "!=", "left": { "mt": "57D" }, "right": "" }
+          ]
+        },
+        "then": { "value": { "literal": "US" } }
+      },
+      {
+        "when": {
+@@ -9073,7 +9270,83 @@ def sort_key(p):
+    ]
+  },
+
+".Document.FIToFICstmrCdtTrf.CdtTrfTxInf.Cdtr.PstlAdr.PstCd": {
+        "mode": "set",
+        "rules": [
+            {
+                "when": {
+                    "all": [
+                        {
+                            "op": "!=",
+                            "left": {
+                                "fn": "regex_extract",
+                                "args": {
+                                    "text": {
+                                        "substr": {
+                                            "value": {"mt": "20"},
+                                            "start": 0,
+                                            "len": 3
+                                        }
+                                    },
+                                    "pattern": "^(7[0-9]{2})$",
+                                    "group": 1
+                                }
+                            },
+                            "right": ""
+                        },
+                        {
+                            "op": "=",
+                            "left": {
+                                "fn": "regex_extract",
+                                "args": {
+                                    "text": {"mt": "32A"},
+                                    "pattern": "^.{6}([A-Z]{3})",
+                                    "group": 1
+                                }
+                            },
+                            "right": "CAD"
+                        },
+                        {
+                            "op": "!=",
+                            "left": {
+                                "fn": "regex_extract",
+                                "args": {
+                                    "text": {"mt": "59"},
+                                    "pattern": "^(?:[^\\r\\n]*\\r?\\n){2}([^\\r\\n]*)",
+                                    "group": 1,
+                                    "flags": 8
+                                }
+                            },
+                            "right": ""
+                        }
+                    ]
+                },
+                "then": {
+                    "value": {
+                        "trim": {
+                            "value": {
+                                "substr": {
+                                    "value": {
+                                        "fn": "regex_extract",
+                                        "args": {
+                                            "text": {"mt": "59"},
+                                            "pattern": "^(?:[^\\r\\n]*\\r?\\n){2}([^\\r\\n]*)",
+                                            "group": 1,
+                                            "flags": 8
+                                        }
+                                    },
+                                    "start": 0,
+                                    "len": 6
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
