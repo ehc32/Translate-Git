@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Saa:DataPDU xmlns:Saa="urn:swift:saa:xsd:saa.2.0"
+  xmlns:Sw="urn:swift:snl:ns.Sw"
+  xmlns:SwInt="urn:swift:snl:ns.SwInt"
+  xmlns:SwGbl="urn:swift:snl:ns.SwGbl"
+  xmlns:SwSec="urn:swift:snl:ns.SwSec">
+  <Saa:Revision>2.0.89</Saa:Revision>
+  <Saa:Header>
+    <Saa:Message>
+      <Saa:SenderReference>IBREPCOBBAXX008$03022026225738</Saa:SenderReference>
+      <Saa:MessageIdentifier>pacs.008.001.08</Saa:MessageIdentifier>
+      <Saa:Format>MX</Saa:Format>
+      <Saa:SubFormat>Input</Saa:SubFormat>
+      <Saa:Sender>
+        <Saa:DN>ou=xxx,o=brepcobb,o=swift</Saa:DN>
+        <Saa:FullName>
+          <Saa:X1>BREPCOBBXXX</Saa:X1>
+          <Saa:X2>xxx</Saa:X2>
+        </Saa:FullName>
+      </Saa:Sender>
+      <Saa:Receiver>
+        <Saa:DN>ou=xxx,o=citius33,o=swift</Saa:DN>
+        <Saa:FullName>
+          <Saa:X1>CITIUS33XXX</Saa:X1>
+          <Saa:X2>xxx</Saa:X2>
+        </Saa:FullName>
+      </Saa:Receiver>
+      <Saa:InterfaceInfo>
+        <Saa:UserReference>5232504259000012</Saa:UserReference>
+        <Saa:MessageCreator>Messenger</Saa:MessageCreator>
+        <Saa:MessageContext>Original</Saa:MessageContext>
+        <Saa:MessageNature>Financial</Saa:MessageNature>
+        <Saa:Sumid>B203FB67685B1098</Saa:Sumid>
+      </Saa:InterfaceInfo>
+      <Saa:NetworkInfo>
+        <Saa:Priority>Normal</Saa:Priority>
+        <Saa:IsPossibleDuplicate>false</Saa:IsPossibleDuplicate>
+        <Saa:Service>swift.finplus!pf</Saa:Service>
+        <Saa:SWIFTNetNetworkInfo>
+          <Saa:RequestType>pacs.008.001.08</Saa:RequestType>
+          <Saa:RequestSubtype>swift.cbprplus.03</Saa:RequestSubtype>
+          <Saa:Reference>31ea5495494f4cb689b38935df3fb005</Saa:Reference>
+          <Saa:IsPossibleDuplicateResponse>false</Saa:IsPossibleDuplicateResponse>
+        </Saa:SWIFTNetNetworkInfo>
+      </Saa:NetworkInfo>
+    </Saa:Message>
+  </Saa:Header>
+  <Saa:Body>
+    <head:AppHdr xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+      <head:Fr>
+        <head:FIId>
+          <head:FinInstnId>
+            <head:BICFI>CITIUS33XXX</head:BICFI>
+          </head:FinInstnId>
+        </head:FIId>
+      </head:Fr>
+      <head:To>
+        <head:FIId>
+          <head:FinInstnId>
+            <head:BICFI>BREPCOBBXXA</head:BICFI>
+          </head:FinInstnId>
+        </head:FIId>
+      </head:To>
+      <head:BizMsgIdr>CITI250505505E1</head:BizMsgIdr>
+      <head:MsgDefIdr>pacs.008.001.08</head:MsgDefIdr>
+      <head:BizSvc>swift.cbprplus.02</head:BizSvc>
+      <head:CreDt>9999-12-31T00:00:00+00:00</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+      <pacs:FIToFICstmrCdtTrf>
+        <pacs:GrpHdr>
+          <pacs:MsgId>CITI250505505E1</pacs:MsgId>
+          <pacs:CreDtTm>9999-12-31T00:00:00+00:00</pacs:CreDtTm>
+          <pacs:NbOfTxs>1</pacs:NbOfTxs>
+          <pacs:SttlmInf>
+            <pacs:SttlmMtd>INDA</pacs:SttlmMtd>
+          </pacs:SttlmInf>
+        </pacs:GrpHdr>
+        <pacs:CdtTrfTxInf>
+          <pacs:PmtId>
+            <pacs:InstrId>CITI250505505E1</pacs:InstrId>
+            <pacs:EndToEndId>NOTPROVIDED</pacs:EndToEndId>
+          </pacs:PmtId>
+          <pacs:IntrBkSttlmAmt Ccy="USD">201.99</pacs:IntrBkSttlmAmt>
+          <pacs:IntrBkSttlmDt>2019-05-30</pacs:IntrBkSttlmDt>
+          <pacs:ChrgBr>SHAR</pacs:ChrgBr>
+          <pacs:InstgAgt>
+            <pacs:FinInstnId>
+              <pacs:BICFI>CITIUS33XXX</pacs:BICFI>
+            </pacs:FinInstnId>
+          </pacs:InstgAgt>
+          <pacs:InstdAgt>
+            <pacs:FinInstnId>
+              <pacs:BICFI>BREPCOBBXXA</pacs:BICFI>
+            </pacs:FinInstnId>
+          </pacs:InstdAgt>
+          <pacs:Dbtr>
+            <pacs:Nm>IBRD - TRUST FUNDS</pacs:Nm>
+            <pacs:PstlAdr>
+              <pacs:AdrLine>1818 H STREET NORTH WEST</pacs:AdrLine>
+              <pacs:AdrLine>WASHINGTON DC 20433, USA</pacs:AdrLine>
+            </pacs:PstlAdr>
+          </pacs:Dbtr>
+          <pacs:DbtrAcct>
+            <pacs:Id>
+              <pacs:Othr>
+                <pacs:Id>FLARCOBBXXX</pacs:Id>
+              </pacs:Othr>
+            </pacs:Id>
+          </pacs:DbtrAcct>
+          <pacs:DbtrAgt>
+            <pacs:FinInstnId>
+              <pacs:Nm>INTERNATIONAL BANK FOR RECONSTRUC</pacs:Nm>
+              <pacs:PstlAdr>
+                <pacs:AdrLine>TION AND DEVELOPMENT WASHINGTON,</pacs:AdrLine>
+                <pacs:AdrLine>DC 20433 WASHINGTON, DC</pacs:AdrLine>
+                <pacs:AdrLine>UNITED STATES OF AMERICA US</pacs:AdrLine>
+              </pacs:PstlAdr>
+            </pacs:FinInstnId>
+          </pacs:DbtrAgt>
+          <pacs:DbtrAgtAcct>
+            <pacs:Id>
+              <pacs:Othr>
+                <pacs:Id>FLARCOBBXXX</pacs:Id>
+              </pacs:Othr>
+            </pacs:Id>
+          </pacs:DbtrAgtAcct>
+          <pacs:CdtrAgt>
+            <pacs:FinInstnId>
+              <pacs:BICFI>BREPCOBBXXA</pacs:BICFI>
+            </pacs:FinInstnId>
+          </pacs:CdtrAgt>
+          <pacs:Cdtr>
+            <pacs:Nm>DTN - DONACION COLECT  VICTIMAS RECON SOC</pacs:Nm>            <!--RNTEMS003-->
+            <pacs:PstlAdr>
+              <pacs:StrtNm>CALLE 16 NO 6 66 PISO 19  32</pacs:StrtNm>              <!--RNTEMS004-->
+              <pacs:TwnNm>BOGOTA</pacs:TwnNm>              <!--RNTEMS005-->
+              <pacs:Ctry>CO</pacs:Ctry>              <!--RNTEMS006-->
+            </pacs:PstlAdr>
+          </pacs:Cdtr>
+          <pacs:CdtrAcct>
+            <pacs:Id>
+              <pacs:Othr>
+                <pacs:Id>51010056</pacs:Id>                <!--RNTEMS001-->
+              </pacs:Othr>
+            </pacs:Id>
+          </pacs:CdtrAcct>
+          <pacs:RmtInf>
+            <pacs:Ustrd>/TF 18908 001 5 ISN 004999 OSN 00942 0 SSN 0056744 RFB/AC361141</pacs:Ustrd>
+          </pacs:RmtInf>
+        </pacs:CdtTrfTxInf>
+      </pacs:FIToFICstmrCdtTrf>
+    </pacs:Document>
+  </Saa:Body>
+</Saa:DataPDU>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Saa:DataPDU xmlns:Saa="urn:swift:saa:xsd:saa.2.0" xmlns:Sw="urn:swift:snl:ns.Sw" xmlns:SwInt="urn:swift:snl:ns.SwInt" xmlns:SwGbl="urn:swift:snl:ns.SwGbl" xmlns:SwSec="urn:swift:snl:ns.SwSec">
+  <Saa:Revision>2.0.14</Saa:Revision>
+  <Saa:Header>
+    <Saa:Message>
+      <Saa:SenderReference>IBREPCOBBAXX009$05022026134617</Saa:SenderReference>
+      <Saa:MessageIdentifier>camt.057.001.06</Saa:MessageIdentifier>
+      <Saa:Format>MX</Saa:Format>
+      <Saa:SubFormat>Input</Saa:SubFormat>
+      <Saa:Sender>
+        <Saa:DN>ou=xxx,o=brepcobb,o=swift</Saa:DN>
+        <Saa:FullName>
+          <Saa:X1>BREPCOBBXXX</Saa:X1>
+          <Saa:X2>xxx</Saa:X2>
+        </Saa:FullName>
+      </Saa:Sender>
+      <Saa:Receiver>
+        <Saa:DN>ou=xxx,o=cbcuuymm,o=swift</Saa:DN>
+        <Saa:FullName>
+          <Saa:X1>CBCUUYMMXXX</Saa:X1>
+          <Saa:X2>xxx</Saa:X2>
+        </Saa:FullName>
+      </Saa:Receiver>
+      <Saa:InterfaceInfo>
+        <Saa:UserReference>5702009292100009</Saa:UserReference>
+        <Saa:MessageCreator>Messenger</Saa:MessageCreator>
+        <Saa:MessageContext>Original</Saa:MessageContext>
+        <Saa:MessageNature>Financial</Saa:MessageNature>
+        <Saa:Sumid>3645DAB4CEE6C417</Saa:Sumid>
+      </Saa:InterfaceInfo>
+      <Saa:NetworkInfo>
+        <Saa:Priority>Normal</Saa:Priority>
+        <Saa:IsPossibleDuplicate>false</Saa:IsPossibleDuplicate>
+        <Saa:Service>swift.finplus!pf</Saa:Service>
+        <Saa:SWIFTNetNetworkInfo>
+          <Saa:RequestType>camt.057.001.06</Saa:RequestType>
+          <Saa:RequestSubtype>swift.cbprplus.03</Saa:RequestSubtype>
+          <Saa:IsPossibleDuplicateResponse>false</Saa:IsPossibleDuplicateResponse>
+        </Saa:SWIFTNetNetworkInfo>
+      </Saa:NetworkInfo>
+    </Saa:Message>
+  </Saa:Header>
+  <Saa:Body>
+    <head:AppHdr xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+      <head:Fr>
+        <head:FIId>
+          <head:FinInstnId>
+            <head:BICFI>BREPCOBBXXX</head:BICFI>
+          </head:FinInstnId>
+        </head:FIId>
+      </head:Fr>
+      <head:To>
+        <head:FIId>
+          <head:FinInstnId>
+            <head:BICFI>CBCUUYMMXXX</head:BICFI>
+          </head:FinInstnId>
+        </head:FIId>
+      </head:To>
+      <head:BizMsgIdr>5702009292100009</head:BizMsgIdr>
+      <head:MsgDefIdr>camt.057.001.06</head:MsgDefIdr>
+      <head:BizSvc>swift.cbprplus.03</head:BizSvc>
+      <head:CreDt>2026-02-05T13:46:17+00:00</head:CreDt>
+    </head:AppHdr>
+    <camt:Document xmlns:camt="urn:iso:std:iso:20022:tech:xsd:camt.057.001.06">
+      <camt:NtfctnToRcv>
+        <camt:GrpHdr>
+          <camt:MsgId>5702009292100009</camt:MsgId>
+          <camt:CreDtTm>2026-02-05T13:46:17+00:00</camt:CreDtTm>
+        </camt:GrpHdr>
+        <camt:Ntfctn>
+          <camt:Id>5702009292100009</camt:Id>
+          <camt:Acct>
+            <camt:Id>
+              <camt:Othr>
+                <camt:Id>021086155</camt:Id>
+              </camt:Othr>
+            </camt:Id>
+          </camt:Acct>
+          <camt:XpctdValDt>2020-09-29</camt:XpctdValDt>
+          <camt:Dbtr>
+            <camt:Agt>
+              <camt:FinInstnId>
+                <camt:Nm>BANCO DE LA REPUBLICA BOGOTA COLOMB</camt:Nm>
+                <camt:PstlAdr>
+                  <camt:StrtNm>IA EXTORNO NO REEMBOLSO 58301202000</camt:StrtNm>
+                  <camt:TwnNm>115020001</camt:TwnNm>
+                </camt:PstlAdr>
+              </camt:FinInstnId>
+            </camt:Agt>
+          </camt:Dbtr>
+          <camt:DbtrAgt>
+            <camt:FinInstnId>
+              <camt:Nm>BANCO DE LA REPUBLICA BOGOTA COLOMB</camt:Nm>
+              <camt:PstlAdr>
+                <camt:StrtNm>IA EXTORNO NO REEMBOLSO 58301202000</camt:StrtNm>
+                <camt:TwnNm>115020001</camt:TwnNm>
+              </camt:PstlAdr>
+            </camt:FinInstnId>
+          </camt:DbtrAgt>
+          <camt:Itm>
+            <camt:Id>371BSUD200929B1</camt:Id>
+            <camt:Amt Ccy="USD">15061.40</camt:Amt>
+          </camt:Itm>
+        </camt:Ntfctn>
+      </camt:NtfctnToRcv>
+    </camt:Document>
+  </Saa:Body>
+</Saa:DataPDU>

@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<Messages>
+    <MX>
+        <DataPDU xmlns="urn:swift:saa:xsd:saa.2.0">
+            <Revision>2.0.14</Revision>
+            <Header>
+                <Message>
+                    <SenderReference>OCITIUS33XXX008$2512011858699</SenderReference>
+                    <MessageIdentifier>pacs.008.001.08</MessageIdentifier>
+                    <Format>MX</Format>
+                    <SubFormat>Output</SubFormat>
+                    <Sender>
+                        <DN>ou=xxx,o=citius33,o=swift</DN>
+                        <FullName>
+                            <X1>CITIUS33XXX</X1>
+                        </FullName>
+                    </Sender>
+                    <Receiver>
+                        <DN>ou=xxx,o=brepcobb,o=swift</DN>
+                        <FullName>
+                            <X1>BREPCOBBXXX</X1>
+                        </FullName>
+                    </Receiver>
+                    <InterfaceInfo>
+                        <UserReference />
+                        <MessageCreator>SWIFTNetInterface</MessageCreator>
+                        <MessageContext>Original</MessageContext>
+                        <MessageNature>Financial</MessageNature>
+                        <Sumid>0EAE2DFA1875A24F</Sumid>
+                    </InterfaceInfo>
+                    <NetworkInfo>
+                        <Priority>Normal</Priority>
+                        <IsPossibleDuplicate>false</IsPossibleDuplicate>
+                        <Service>swift.finplus</Service>
+                        <Network>SWIFTNet</Network>
+                        <SWIFTNetNetworkInfo>
+                            <RequestType>pacs.008.001.08</RequestType>
+                            <Reference>58f16dad-dddd-00cb-dddd-316f7f6066fb</Reference>
+                            <IsCopyRequested>false</IsCopyRequested>
+                        </SWIFTNetNetworkInfo>
+                    </NetworkInfo>
+                    <SecurityInfo>
+                        <IsSigningRequested>false</IsSigningRequested>
+                        <SWIFTNetSecurityInfo>
+                            <IsNRRequested>false</IsNRRequested>
+                        </SWIFTNetSecurityInfo>
+                    </SecurityInfo>
+                </Message>
+            </Header>
+            <Body>
+                <head:AppHdr xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+                    <head:Fr>
+                        <head:FIId>
+                            <head:FinInstnId>
+                                <head:BICFI>CITIUS33XXX</head:BICFI>
+                            </head:FinInstnId>
+                        </head:FIId>
+                    </head:Fr>
+                    <head:To>
+                        <head:FIId>
+                            <head:FinInstnId>
+                                <head:BICFI>BREPCOBBXXX</head:BICFI>
+                            </head:FinInstnId>
+                        </head:FIId>
+                    </head:To>
+                    <head:BizMsgIdr>ABCDE2105104PJ02</head:BizMsgIdr>
+                    <head:MsgDefIdr>pacs.008.001.08</head:MsgDefIdr>
+                    <head:BizSvc>swift.cbprplus.03</head:BizSvc>
+                    <head:CreDt>2025-12-01T02:05:25.605+00:00</head:CreDt>
+                    <head:PssblDplct>false</head:PssblDplct>
+                </head:AppHdr>
+                <pacs:Document xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+                    <pacs:FIToFICstmrCdtTrf>
+                        <pacs:GrpHdr>
+                            <pacs:MsgId>ABCDE2105104PJ02</pacs:MsgId>
+                            <pacs:CreDtTm>2025-12-01T02:05:25.605+00:00</pacs:CreDtTm>
+                            <pacs:NbOfTxs>1</pacs:NbOfTxs>
+                            <pacs:SttlmInf>
+                                <pacs:SttlmMtd>INGA</pacs:SttlmMtd>
+                            </pacs:SttlmInf>
+                        </pacs:GrpHdr>
+                        <pacs:CdtTrfTxInf>
+                            <pacs:PmtId>
+                                <pacs:InstrId>C0053350144101</pacs:InstrId>
+                                <pacs:EndToEndId>1400785840</pacs:EndToEndId>
+                                <pacs:TxId>F9S2511289139800</pacs:TxId>
+                                <pacs:UETR>89f16dad-dddd-84cb-dddd-316f7f6066fb</pacs:UETR>
+                                <pacs:ClrSysRef>S00012008I0002190R0000000O0001441</pacs:ClrSysRef>
+                            </pacs:PmtId>
+                            <pacs:PmtTpInf>
+                                <pacs:SvcLvl>
+                                    <pacs:Cd>G001</pacs:Cd>
+                                </pacs:SvcLvl>
+                            </pacs:PmtTpInf>
+                            <pacs:IntrBkSttlmAmt Ccy="USD">360397.57</pacs:IntrBkSttlmAmt>
+                            <pacs:IntrBkSttlmDt>2025-12-01</pacs:IntrBkSttlmDt>
+                            <pacs:InstdAmt Ccy="USD">360397.57</pacs:InstdAmt>
+                            <pacs:ChrgBr>SHAR</pacs:ChrgBr>
+                            <pacs:ChrgsInf>
+                                <pacs:Amt Ccy="USD">0</pacs:Amt>
+                                <pacs:Agt>
+                                    <pacs:FinInstnId>
+                                        <pacs:BICFI>CITIUS33XXX</pacs:BICFI>
+                                    </pacs:FinInstnId>
+                                </pacs:Agt>
+                            </pacs:ChrgsInf>
+                            <pacs:PrvsInstgAgt1>
+                                <pacs:FinInstnId>
+                                    <pacs:Nm>INTER-AMERICAN DEVELOPMENT BANK</pacs:Nm>
+                                    <pacs:PstlAdr>
+                                        <pacs:AdrLine>1300 NEW YORK AVE NW</pacs:AdrLine>
+                                        <pacs:AdrLine>WASHINGTON DC INTERNATIONAL 20577</pacs:AdrLine>
+                                    </pacs:PstlAdr>
+                                </pacs:FinInstnId>
+                            </pacs:PrvsInstgAgt1>
+                            <pacs:PrvsInstgAgt1Acct>
+                                <pacs:Id>
+                                    <pacs:Othr>
+                                        <pacs:Id>8901468509</pacs:Id>
+                                    </pacs:Othr>
+                                </pacs:Id>
+                            </pacs:PrvsInstgAgt1Acct>
+                            <pacs:PrvsInstgAgt2>
+                                <pacs:FinInstnId>
+                                    <pacs:ClrSysMmbId>
+                                        <pacs:ClrSysId>
+                                            <pacs:Cd>USPID</pacs:Cd>
+                                        </pacs:ClrSysId>
+                                        <pacs:MmbId>0001</pacs:MmbId>
+                                    </pacs:ClrSysMmbId>
+                                </pacs:FinInstnId>
+                            </pacs:PrvsInstgAgt2>
+                            <pacs:InstgAgt>
+                                <pacs:FinInstnId>
+                                    <pacs:BICFI>CITIUS33XXX</pacs:BICFI>
+                                </pacs:FinInstnId>
+                            </pacs:InstgAgt>
+                            <pacs:InstdAgt>
+                                <pacs:FinInstnId>
+                                    <pacs:BICFI>BREPCOBBXXX</pacs:BICFI>
+                                </pacs:FinInstnId>
+                            </pacs:InstdAgt>
+                            <pacs:Dbtr>
+                                <pacs:Nm>INTER-AMERICAN DEVELOPMENT BANK C</pacs:Nm>
+                                <pacs:PstlAdr>
+                                    <pacs:AdrLine>1/ASH MANAGEMENT SECTION - IDB</pacs:AdrLine>
+                                    <pacs:AdrLine>2/1300 NEW YORK AVENUE,1300 NEW YO+</pacs:AdrLine>
+                                    <pacs:AdrLine>3/US/WASHINGTON, DC,20577</pacs:AdrLine>
+                                </pacs:PstlAdr>
+                            </pacs:Dbtr>
+                            <pacs:DbtrAcct>
+                                <pacs:Id>
+                                    <pacs:Othr>
+                                        <pacs:Id>8901468509</pacs:Id>
+                                    </pacs:Othr>
+                                </pacs:Id>
+                            </pacs:DbtrAcct>
+                            <pacs:DbtrAgt>
+                                <pacs:FinInstnId>
+                                    <pacs:BICFI>IRVTUS3NXXX</pacs:BICFI>
+                                </pacs:FinInstnId>
+                            </pacs:DbtrAgt>
+                            <pacs:CdtrAgt>
+                                <pacs:FinInstnId>
+                                    <pacs:BICFI>BREPCOBBXXX</pacs:BICFI>
+                                </pacs:FinInstnId>
+                            </pacs:CdtrAgt>
+                            <pacs:Cdtr>
+                                <pacs:Nm>DTN CONVENIO FINANCIAMIENTO NO RE</pacs:Nm>
+                                <pacs:PstlAdr>
+                                    <pacs:AdrLine>1/EMBOLSABLE GRT CF 17823 CO</pacs:AdrLine>
+                                    <pacs:AdrLine>2/ARRERA 14 NO. 99 33 PISOS 6, 7, +</pacs:AdrLine>
+                                    <pacs:AdrLine>3/CO/COLOMBIA,110221</pacs:AdrLine>
+                                </pacs:PstlAdr>
+                            </pacs:Cdtr>
+                            <pacs:CdtrAcct>
+                                <pacs:Id>
+                                    <pacs:Othr>
+                                        <pacs:Id>51499926</pacs:Id>
+                                    </pacs:Othr>
+                                </pacs:Id>
+                            </pacs:CdtrAcct>
+                            <pacs:InstrForCdtrAgt>
+                                <pacs:InstrInf>/ACC/36387251</pacs:InstrInf>
+                            </pacs:InstrForCdtrAgt>
+                            <pacs:InstrForNxtAgt>
+                                <pacs:InstrInf>/REC/PLEASE PAY IN FULL</pacs:InstrInf>
+                            </pacs:InstrForNxtAgt>
+                            <pacs:RmtInf>
+                                <pacs:Ustrd>/RFB/1400785840 ISN 0002190 OSN 0001441 SSN
+                                    00012008/RFB/1400785840</pacs:Ustrd>
+                            </pacs:RmtInf>
+                        </pacs:CdtTrfTxInf>
+                    </pacs:FIToFICstmrCdtTrf>
+                </pacs:Document>
+            </Body>
+        </DataPDU>
+    </MX>
+</Messages>

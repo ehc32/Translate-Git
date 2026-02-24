@@ -1,0 +1,16 @@
+{1:F01BREPCOBBAXXX0000000000}{2:I292BCEXCOBBXXXXN}{3:{111:001}{121:ffff3bae-1cd6-4da0-86c9-acc0eab1b530}}{4:
+:20:400250319920007
+:21:400BBOG241001E1
+:11S:200
+250319
+:79:1. Parse Failed for Syntax Tag: 32
+AMsgTag: 21 2. Falla en el mapeo d
+el campo 21 3. Found Fld 21, Expec
+ting Mandatory Field 32A 4. Found 
+Fld 21, Expecting Mandatory Field 
+57A 5. Datos de bÃºsqueda no encont
+rados 6. Monto vÃ¡lido requerida 7.
+ Campo requerido para la bÃºsqueda 
+de la InstrucciÃ³n Permanente {Mone
+da de la cuenta}
+-}
